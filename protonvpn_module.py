@@ -51,7 +51,7 @@ class Py3status:
     format = '{vpn}: {country}{features}{killswitch}'
     connected_message = 'ProtonVPN'
     not_connected_message = 'No VPN'
-    cache_timeout = 3
+    cache_timeout = 5
 
     def _get_new_output(self):
 
