@@ -1,11 +1,11 @@
 """
-Displays status of connection to ProtonVPN
+Displays status of connection to ProtonVPN, on click it connects you to the fastest server or disconnects you.
 
 Configuration parameters:
     cache_timeout: refresh interval for this module (default 5)
-    format = display format for this module (default '{vpn}: {country}{features}{killswitch}')
+    format: display format for this module (default '{vpn}: {country}{features}{killswitch}')
     connected_message: Message to display when connected (default 'ProtonVPN')
-    not_connected_message = Message to display when disconnected (default 'No VPN')
+    not_connected_message: Message to display when disconnected (default 'No VPN')
 
 Format placeholders:
     {vpn} The connected or disconnected status
