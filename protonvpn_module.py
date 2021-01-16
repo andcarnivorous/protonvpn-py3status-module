@@ -62,9 +62,11 @@ class Py3status:
         result = result.stdout.decode('utf-8')
 
         if 'No active ProtonVPN connection' in result:
+            self.vpn = self.not_connected_message
             self.color = self.py3.COLOR_BAD
             return self.py3.safe_format('{vpn}', {'vpn':self.not_connected_message})
 
+        self.vpn = self.connected_message
         self.color = self.py3.COLOR_GOOD
 
         country = re.search('Country: \\t ([A-Za-z]+)', result)
